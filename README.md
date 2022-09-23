@@ -4,7 +4,7 @@
 
 - Linux (x86_64 or arm64)
 
-    The following dependencies are required: `setools lzip wine patchelf e2fsprogs aria2 python3`
+    The following dependencies are required: `setools lzip wine patchelf e2fsprogs aria2 python3 attr`
 
     The following components need to be installed using `winetricks`: `msxml6`
 
@@ -14,11 +14,22 @@
   - Recommended Use
     - Ubuntu (You can use [WSL2](https://apps.microsoft.com/store/search?publisher=Canonical%20Group%20Limited))
 
-        `run.sh` will handle all dependencies automatically.
-        No need to type any commands.
+        Ready to use right out of the box.
+    - Debian (You can use [WSL2](https://apps.microsoft.com/store/detail/debian/9MSVKQC78PK6))
+
+        Need to add `contrib` sources to the source list to install winetricks.
+
+    - OpenSUSE (You can use [WSL2](https://apps.microsoft.com/store/search?publisher=SUSE))
+
+        Ready to use right out of the box.
+
+    `run.sh` will handle all dependencies automatically.
+
+    No need to type any commands.
   - Other Distributions
 
     Install the dependencies manually.
+
     Use the command-line program `build.sh`.
 
 ## Features
